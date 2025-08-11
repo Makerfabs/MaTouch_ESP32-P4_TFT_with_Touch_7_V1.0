@@ -1,0 +1,11 @@
+# 将所有文本文件的换行符在提交时统一为 LF
+* text=auto eol=lf
+
+# 对特定 Windows 文件（如果项目中有）保持 CRLF
+*.bat      eol=crlf
+*.cmd      eol=crlf
+
+# 明确指定二进制文件，让 Git 不要动它们
+*.png      binary
+*.jpg      binary
+*.bin      binary
